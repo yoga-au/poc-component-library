@@ -17,6 +17,15 @@
     ".": {
       "types": "./dist/lib/main.d.ts",
       "default": "./dist/main.js"
+    },
+    "./style.scss": {
+      "default": "./dist/style.scss"
+    },
+    "./theme.scss": {
+      "default": "./dist/theme.scss"
+    },
+    "./utilities.scss": {
+      "default": "./dist/utilities.scss"
     }
   },
   "peerDependencies": {
