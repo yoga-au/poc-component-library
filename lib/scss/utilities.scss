@@ -1,0 +1,36 @@
+$ifp-gradients: map-merge(
+  $ifp-gradients,
+  (
+    gradient: var(--#{$prefix}gradient),
+  )
+);
+
+$ifp-shadows: map-merge(
+  $ifp-shadows,
+  (
+    null: var(--#{$prefix}box-shadow),
+    sm: var(--#{$prefix}box-shadow-sm),
+    lg: var(--#{$prefix}box-shadow-lg),
+    none: none,
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gradient":
+      map-merge(
+        map-get($utilities, "gradient"),
+        (
+          values: $ifp-gradients,
+        )
+      ),
+    "shadow":
+      map-merge(
+        map-get($utilities, "shadow"),
+        (
+          values: $ifp-shadows,
+        )
+      ),
+  )
+);

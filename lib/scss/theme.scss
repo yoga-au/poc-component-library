@@ -1,0 +1,86 @@
+$ifp-colors: (
+  // black
+  "ifp-black-00": #675b5e,
+  "ifp-black-01": #594f52,
+  "ifp-black-02": #4c4345,
+  "ifp-black-03": #312b2c,
+  "ifp-black-04": #231f20,
+  "ifp-black-05": #151313,
+
+  // white
+  "ifp-white-00": #fff,
+  "ifp-white-01": #f6f4f5,
+  "ifp-white-02": #e8e5e6,
+  "ifp-white-03": #d9d5d7,
+
+  // gray
+  "ifp-gray-00": #cbc6c8,
+  "ifp-gray-01": #bdb7b9,
+  "ifp-gray-02": #a0989a,
+  "ifp-gray-03": #847a7c,
+
+  // yellow
+  "ifp-yellow-00": #fee16a,
+  "ifp-yellow-01": #fdd739,
+  "ifp-yellow-02": #fdcd07,
+  "ifp-yellow-03": #caa406,
+  "ifp-yellow-04": #987b04,
+
+  // green
+  "ifp-green-00": #e6f5eb,
+  "ifp-green-01": #9ad6ae,
+  "ifp-green-02": #4fba77,
+  "ifp-green-03": #1f9f55,
+  "ifp-green-04": #005d2b,
+
+  // red
+  "ifp-red-00": #f88,
+  "ifp-red-01": #ff3b3b,
+  "ifp-red-02": #f00,
+  "ifp-red-03": #cd0000,
+  "ifp-red-04": #9b0000,
+
+  // light yellow
+  "ifp-light-yellow-00": #fffcf0,
+  "ifp-light-yellow-01": #fff6d2,
+  "ifp-light-yellow-02": #feeda6,
+
+  // light blue
+  "ifp-light-blue-00": #eef5f9,
+  "ifp-light-blue-01": #cde0ed,
+  "ifp-light-blue-02": #9bc2da,
+
+  // link
+  "ifp-link": #2f80ed
+) !default;
+
+$ifp-gradients: (
+  "ifp-gradient-black": linear-gradient(140deg, #675b5e 0%, #231f20 138.1%),
+  "ifp-gradient-yellow-01": linear-gradient(135deg, #fee16a 0%, #fdcd07 100%),
+  "ifp-gradient-yellow-02": linear-gradient(204deg, #fee16a 0%, #fdd739 100%),
+  "ifp-gradient-link": linear-gradient(315deg, #2f80ed 0%, #68a1ee 100%),
+  "ifp-gradient-red": linear-gradient(315deg, #ff3b3b 0%, #f88 100%),
+  "ifp-gradient-green-01": linear-gradient(315deg, #4fba77 0%, #9ad6ae 100%),
+  "ifp-gradient-green-02": linear-gradient(204deg, #9ad6ae 0%, #4fba77 100%),
+  "ifp-gradient-blue-01": linear-gradient(315deg, #2c709b 0%, #5899c2 100%),
+  "ifp-gradient-blue-02": linear-gradient(204deg, #5899c2 0%, #2c709b 100%),
+  "ifp-gradient-transparent":
+    linear-gradient(
+      286deg,
+      rgba(217, 213, 215, 0) 0%,
+      rgba(217, 213, 215, 0.35) 96.2%
+    ),
+) !default;
+
+$ifp-shadows: (
+  "ifp-floating-high-down": 0px 12px 45px 0px rgba(12, 31, 48, 0.08),
+  "ifp-floating-high-center": 0px 1px 45px 0px rgba(12, 31, 48, 0.08),
+  "ifp-floating-low": 0px 4px 12px 0px rgba(12, 31, 48, 0.05),
+  "ifp-high": 0px 8px 16px 0px rgba(12, 31, 48, 0.08),
+  "ifp-mid": 0px 6px 12px 0px rgba(12, 31, 48, 0.12),
+  "ifp-low": 0px 4px 8px 0px rgba(12, 31, 48, 0.1),
+  "ifp-bold": 0px 2px 4px 0px rgba(12, 31, 48, 0.12),
+  "ifp-card": 0px 2px 8px -2px rgba(89, 79, 82, 0.2),
+);
+
+$theme-colors: map-merge($theme-colors, $ifp-colors);
