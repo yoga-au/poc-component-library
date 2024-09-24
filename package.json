@@ -17,6 +17,8 @@
   "files": [
     "dist"
   ],
+  "sass": "lib/scss/style.scss",
+  "main": "dist/main.js",
   "exports": {
     ".": {
       "types": "./dist/lib/main.d.ts",
@@ -33,14 +35,13 @@
     }
   },
   "peerDependencies": {
-    "@popperjs/core": "^2.0.0",
     "bootstrap": "^5.0.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "sass": "^1.0.0"
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
+    "@popperjs/core": "^2.11.8",
     "@types/node": "^22.5.5",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
@@ -49,6 +50,7 @@
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
+    "sass": "^1.79.3",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1",
